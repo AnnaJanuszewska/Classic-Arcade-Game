@@ -1,3 +1,36 @@
 body {
     text-align: center;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+#winnerAlert {
+    height: 30vh;
+    width: 35vw;
+    position: fixed;
+    top: 20%;
+    left: 33%;
+    background: linear-gradient(160deg, #80b5f1 0%, #4dca72 100%);
+    visibility: hidden;
+}
+
+#winnerAlert h3 {
+    font-size: 1.6em;
+    color: rgb(41, 40, 40);
+    text-shadow: 2px;
+    padding: 8%;
+}
+
+#button {
+    text-transform: uppercase;
+    width: 100px;
+    height: 45px;
+    color:rgb(41, 40, 40);
+    background-color: rgb(110, 118, 235);
+    box-shadow: 5px 5px 5px #888;
+    border: solid 2px rgb(74, 85, 236);
+    border-radius: 10px;
+}
+
+#button:active {
+    transform: translateY(5px);
 }

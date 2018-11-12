@@ -8,8 +8,6 @@
     Udacity Webinar "FEND P3: Classic Arcade Game Clone walkthrough with Llon"
     https://www.youtube.com/watch?v=oz7pHJ65TEk&feature=youtu.be
 
-    so it could be some similarities to the projects of this two walkthrough.
-
 */
 
 // Enemies our player must avoid
@@ -103,8 +101,6 @@ Player.prototype.handleInput = function(input) {
     } else if (input === "down" && this.y + vertical <= 400) {
         this.y += vertical;
     }
-
-    console.log(this.y);
 }
 
 
@@ -133,7 +129,18 @@ Player.prototype.reset = function() {
     this.y = this.startY;
 }
 
+const winnerAlert = document.getElementById("winnerAlert");
+
 Player.prototype.won = function() {
     this.reset();
-    alert("You won!");
-}
+    setTimeout(function(){
+     winnerAlert.style.visibility = "visible";
+        }, 200);
+} 
+
+const button = document.getElementById("button");
+button.addEventListener("click", function() {
+    winnerAlert.style.visibility = "hidden";
+
+}); 
+
