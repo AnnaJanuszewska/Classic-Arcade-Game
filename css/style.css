@@ -4,7 +4,7 @@ body {
 }
 
 #winnerAlert {
-    height: 30vh;
+    height: 35vh;
     width: 35vw;
     position: fixed;
     top: 20%;
@@ -17,7 +17,7 @@ body {
     font-size: 1.6em;
     color: rgb(41, 40, 40);
     text-shadow: 2px;
-    padding: 8%;
+    padding: 4%;
 }
 
 #button {
@@ -33,4 +33,15 @@ body {
 
 #button:active {
     transform: translateY(5px);
+}
+
+footer {
+    position: fixed;
+    bottom: 3px;
+    left: 40%;
+}
+
+a {
+    font-style: italic;
+    color: rgb(12, 139, 12);
 }
