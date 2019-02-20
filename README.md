@@ -8,4 +8,7 @@ You are the player and you have to reach the water. But be careful! There are po
 
 **When you reach the water, you win!**
 
+## Technologies
+HTML5 Canvas, CSS, JavaScript, ES6
+
 
